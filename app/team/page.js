@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../component/Navbar';
 import Team from './Team';
-import Footer from '../components/Footer';
+import Footer from '../component/Footer';
 
 
 const App = () => {

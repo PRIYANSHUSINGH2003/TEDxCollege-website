@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { AiOutlineHome} from 'react-icons/ai'; // Example additional icons
+import { AiOutlineHome } from 'react-icons/ai'; // Example additional icons
 import { MdOutlineSpeakerNotes, MdOutlineVideoLibrary } from 'react-icons/md';
 import { RiTeamLine } from 'react-icons/ri';
 import { FiPhoneCall } from 'react-icons/fi';
@@ -12,7 +12,7 @@ const Navbar = () => {
 
     const navItems = [
         { name: 'Home', icon: <AiOutlineHome />, href: '/' },
-        { name: 'Speakers', icon: <MdOutlineSpeakerNotes />,href: '/speakers' },
+        { name: 'Speakers', icon: <MdOutlineSpeakerNotes />, href: '/speakers' },
         { name: 'Team', icon: <RiTeamLine />, href: '/team' },
         { name: 'Watch', icon: <MdOutlineVideoLibrary />, href: '/watch' },
         { name: 'Our Partners', icon: null, href: '/ourpartners' },
@@ -30,13 +30,13 @@ const Navbar = () => {
                         className="h-12 transform hover:scale-105 transition duration-300"
                     />
                     <span className="ml-2 text-2xl font-bold text-tedRed">
-                        TEDxCollege&apos;s
+                        TEDxCollege
                     </span>
                 </Link>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-8">
-                    {navItems.map(({ name, icon,href }, index) => (
+                    {navItems.map(({ name, icon, href }, index) => (
                         <Link
                             key={index}
                             href={href}

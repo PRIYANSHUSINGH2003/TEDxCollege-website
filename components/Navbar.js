@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { AiOutlineHome, AiOutlineTeam } from 'react-icons/ai'; // Example additional icons
+import { AiOutlineHome} from 'react-icons/ai'; // Example additional icons
 import { MdOutlineSpeakerNotes, MdOutlineVideoLibrary } from 'react-icons/md';
 import { RiTeamLine } from 'react-icons/ri';
 import { FiPhoneCall } from 'react-icons/fi';

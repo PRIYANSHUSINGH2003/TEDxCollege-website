@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaPlay } from 'react-icons/fa';
-import { AiOutlineCalendar } from 'react-icons/ai'; // Added more icons for variety
 import Image from 'next/image';
 
 const Hero = () => {

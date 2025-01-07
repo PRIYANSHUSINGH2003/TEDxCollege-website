@@ -30,7 +30,7 @@ const Navbar = () => {
                         className="h-12 transform hover:scale-105 transition duration-300"
                     />
                     <span className="ml-2 text-2xl font-bold text-tedRed">
-                        TEDxCollege
+                        TEDxCollege&apos;s
                     </span>
                 </Link>
 

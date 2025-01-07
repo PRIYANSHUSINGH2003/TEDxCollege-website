@@ -1,7 +1,6 @@
 import React from 'react';
 import { AiOutlineCalendar, AiFillStar } from 'react-icons/ai';
-import { FaTicketAlt, FaHandshake } from 'react-icons/fa';
-import { BsFillPersonFill } from 'react-icons/bs';
+import { FaTicketAlt } from 'react-icons/fa'; 
 
 const UpcomingEvents = () => {
     return (
@@ -19,7 +18,7 @@ const UpcomingEvents = () => {
                     {/* Event 1 */}
                     <div className="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeIn">
                         <AiOutlineCalendar className="text-4xl text-tedRed mb-4 mx-auto" />
-                        <h3 className="text-2xl font-semibold text-black mb-3">Event 1: Tech Talks</h3>
+                        <h3 className="text-2xl font-semibold text-black mb-3">Event 1: Tech Talks&apos;</h3>
                         <p className="text-lg text-gray-600">Stay ahead in the tech world with insights from industry leaders.</p>
                     </div>
 
@@ -27,7 +26,7 @@ const UpcomingEvents = () => {
                     <div className="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeIn">
                         <AiFillStar className="text-4xl text-tedRed mb-4 mx-auto" />
                         <h3 className="text-2xl font-semibold text-black mb-3">Event 2: Theme Reveal</h3>
-                        <p className="text-lg text-gray-600">Unveil the theme for this year's TEDx, setting the stage for amazing talks!</p>
+                        <p className="text-lg text-gray-600">Unveil the theme for this year&apos;s TEDx, setting the stage for amazing talks!</p>
                     </div>
 
                     {/* Event 3 */}
@@ -42,7 +41,7 @@ const UpcomingEvents = () => {
                 <div className="mt-16 bg-black text-white p-8 rounded-lg shadow-lg animate__animated animate__fadeInUp">
                     <h3 className="text-2xl font-semibold mb-4">Sign up for the latest TEDx NITK news!</h3>
                     <p className="text-lg text-lightGrey mb-6">
-                        Don't miss out on any updates. Stay informed about upcoming events, theme reveals, and our amazing speakers.
+                        Don&apos;t miss out on any updates. Stay informed about upcoming events, theme reveals, and our amazing speakers.
                     </p>
                     <form action="https://example.com/signup" method="POST">
                         <input

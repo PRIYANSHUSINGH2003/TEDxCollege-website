@@ -87,7 +87,7 @@ const UpcomingSpeakers = () => {
                     Meet Our Upcoming Speakers
                 </h1>
                 <p className="text-lg mt-4 text-gray-300 animate__animated animate__fadeInUp">
-                    Be inspired by innovators, creators, and leaders shaping the future.
+                    Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
                 </p>
                 <button className="mt-8 px-8 py-3 bg-red-600 hover:bg-red-500 rounded-md text-lg font-medium transition transform hover:scale-105 animate__animated animate__fadeIn">
                     Sign Up for Updates
@@ -123,7 +123,7 @@ const UpcomingSpeakers = () => {
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold text-white mb-2">{speaker.name}</h3>
                                 <p className="text-lg font-semibold text-gray-400 mb-2">{speaker.title}</p>
-                                <p className="text-sm text-gray-500 mb-4">{speaker.bio}</p>
+                                <p className="text-sm text-gray-500 mb-4">{speaker.bio.replace("'", "&#39;")}</p>
                                 <div className="flex items-center text-gray-400 mb-4">
                                     <MdLocationOn className="mr-2" />
                                     <span>{speaker.location}</span>
@@ -194,7 +194,7 @@ const UpcomingSpeakers = () => {
                                 <p className="text-sm text-center text-gray-600">
                                     {speaker.title}
                                 </p>
-                                <p className="text-center mt-4 text-gray-700">{speaker.bio}</p>
+                                <p className="text-center mt-4 text-gray-700">{speaker.bio.replace("'", "&#39;")}</p>
                                 <div className="flex justify-center mt-4 space-x-4">
                                     <a
                                         href={speaker.social.linkedin}

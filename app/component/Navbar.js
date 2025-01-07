@@ -12,7 +12,7 @@ const Navbar = () => {
 
     const navItems = [
         { name: 'Home', icon: <AiOutlineHome />, href: '/' },
-        { name: 'Speakers', icon: <MdOutlineSpeakerNotes />,href: '/speakers' },
+        { name: 'Speakers', icon: <MdOutlineSpeakerNotes />, href: '/speakers' },
         { name: 'Team', icon: <RiTeamLine />, href: '/team' },
         { name: 'Watch', icon: <MdOutlineVideoLibrary />, href: '/watch' },
         { name: 'Our Partners', icon: null, href: '/ourpartners' },
@@ -36,7 +36,7 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-8">
-                    {navItems.map(({ name, icon,href }, index) => (
+                    {navItems.map(({ name, icon, href }, index) => (
                         <Link
                             key={index}
                             href={href}

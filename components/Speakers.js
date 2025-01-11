@@ -2,6 +2,7 @@ import React from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md';
 import { AiOutlineInstagram, AiOutlineTwitter, AiOutlineLinkedin } from 'react-icons/ai';
+import Image from 'next/image';
 
 const speakers = [
     {
@@ -58,9 +59,11 @@ const Speakers = () => {
                     >
                         {/* Speaker Image */}
                         <div className="relative w-full h-64">
-                            <img
+                        <Image
                                 src={speaker.image}
                                 alt={speaker.name}
+                                layout="fill"
+                                objectFit="cover"
                                 className="w-full h-full object-cover object-center rounded-t-lg transition-transform duration-500 ease-in-out transform hover:scale-110"
                             />
                             <div className="absolute top-4 left-4 bg-black bg-opacity-50 p-2 rounded-full animate__animated animate__fadeIn">

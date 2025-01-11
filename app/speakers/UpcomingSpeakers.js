@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaInstagram} from 'react-icons/fa';
 import { AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
-import MarqueeComponent from './MarqueeComponent';
 import Image from 'next/image';
 
 const speakers = [
@@ -37,98 +36,7 @@ const speakers = [
             linkedin: 'https://www.linkedin.com/in/janesmith'
         }
     },
-    {
-        name: 'John Doe',
-        title: 'Innovator in AI',
-        bio: 'John Doe is an industry-leading expert in artificial intelligence, having worked with top tech companies to revolutionize AI development.',
-        image: '/images/speaker1.png',
-        social: {
-            instagram: 'https://www.instagram.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/johndoe',
-        }
-    },
-    {
-        name: 'Jane Smith',
-        title: 'Pioneer in Sustainable Design',
-        bio: 'Jane Smith is known for her sustainable design solutions that are transforming the future of architecture and urban development.',
-        image: '/images/speaker2.png', // Replace with your speaker image
-        social: {
-            instagram: 'https://www.instagram.com/janesmith',
-            linkedin: 'https://www.linkedin.com/in/janesmith'
-        }
-    },
-    {
-        name: 'Jane Smith',
-        title: 'Pioneer in Sustainable Design',
-        bio: 'Jane Smith is known for her sustainable design solutions that are transforming the future of architecture and urban development.',
-        image: '/images/speaker3.png', // Replace with your speaker image
-        social: {
-            instagram: 'https://www.instagram.com/janesmith',
-            linkedin: 'https://www.linkedin.com/in/janesmith'
-        }
-    },
-    {
-        name: 'John Doe',
-        title: 'Innovator in AI',
-        bio: 'John Doe is an industry-leading expert in artificial intelligence, having worked with top tech companies to revolutionize AI development.',
-        image: '/images/speaker1.png',
-        social: {
-            instagram: 'https://www.instagram.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/johndoe',
-        },
-        location: 'San Francisco, CA',
-    },
-    {
-        name: 'Jane Smith',
-        title: 'Pioneer in Sustainable Design',
-        bio: 'Jane Smith is known for her sustainable design solutions that are transforming the future of architecture and urban development.',
-        image: '/images/speaker2.png', // Replace with your speaker image
-        social: {
-            instagram: 'https://www.instagram.com/janesmith',
-            linkedin: 'https://www.linkedin.com/in/janesmith'
-        },
-        location: 'New York, NY'
-    },
-    {
-        name: 'Jane Smith',
-        title: 'Pioneer in Sustainable Design',
-        bio: 'Jane Smith is known for her sustainable design solutions that are transforming the future of architecture and urban development.',
-        image: '/images/speaker3.png', // Replace with your speaker image
-        social: {
-            instagram: 'https://www.instagram.com/janesmith',
-            linkedin: 'https://www.linkedin.com/in/janesmith'
-        }
-    },
-    {
-        name: 'John Doe',
-        title: 'Innovator in AI',
-        bio: 'John Doe is an industry-leading expert in artificial intelligence, having worked with top tech companies to revolutionize AI development.',
-        image: '/images/speaker1.png',
-        social: {
-            instagram: 'https://www.instagram.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/johndoe',
-        }
-    },
-    {
-        name: 'Jane Smith',
-        title: 'Pioneer in Sustainable Design',
-        bio: 'Jane Smith is known for her sustainable design solutions that are transforming the future of architecture and urban development.',
-        image: '/images/speaker2.png', // Replace with your speaker image
-        social: {
-            instagram: 'https://www.instagram.com/janesmith',
-            linkedin: 'https://www.linkedin.com/in/janesmith'
-        }
-    },
-    {
-        name: 'Jane Smith',
-        title: 'Pioneer in Sustainable Design',
-        bio: 'Jane Smith is known for her sustainable design solutions that are transforming the future of architecture and urban development.',
-        image: '/images/speaker3.png', // Replace with your speaker image
-        social: {
-            instagram: 'https://www.instagram.com/janesmith',
-            linkedin: 'https://www.linkedin.com/in/janesmith'
-        }
-    },
+   
 ];
 const pastSpeakers = [
     {
@@ -273,7 +181,12 @@ const UpcomingSpeakers = () => {
             </header>
 
             {/* Filters Section */}
-            <MarqueeComponent />
+            <section className="py-8 px-6 bg-gray-800">
+                <div className="flex justify-between items-center max-w-screen-xl mx-auto">
+                    <h2 className="text-3xl font-semibold">Recent Speakers</h2>
+
+                </div>
+            </section>
 
             {/* Speakers Section */}
             <section className="py-16 px-6">

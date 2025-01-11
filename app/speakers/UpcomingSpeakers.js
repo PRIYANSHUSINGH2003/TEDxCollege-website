@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaTwitter, FaInstagram, FaFilter } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaFilter } from 'react-icons/fa';
 import { AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
 import Image from 'next/image';
 

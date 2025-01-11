@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaInstagram, FaFilter } from 'react-icons/fa';
 import { AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
+import MarqueeComponent from './MarqueeComponent';
 import Image from 'next/image';
 
 const speakers = [
@@ -272,15 +273,7 @@ const UpcomingSpeakers = () => {
             </header>
 
             {/* Filters Section */}
-            <section className="py-8 px-6 bg-gray-800">
-                <div className="flex justify-between items-center max-w-screen-xl mx-auto">
-                    <h2 className="text-3xl font-semibold">Browse Speakers</h2>
-                    <button className="flex items-center space-x-2 bg-red-600 hover:bg-red-500 px-4 py-2 rounded text-white">
-                        <FaFilter />
-                        <span>Filter</span>
-                    </button>
-                </div>
-            </section>
+            <MarqueeComponent />
 
             {/* Speakers Section */}
             <section className="py-16 px-6">

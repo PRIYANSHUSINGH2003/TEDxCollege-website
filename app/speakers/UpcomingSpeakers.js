@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaInstagram, FaFilter } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram} from 'react-icons/fa';
 import { AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
 import MarqueeComponent from './MarqueeComponent';
 import Image from 'next/image';

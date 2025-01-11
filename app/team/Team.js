@@ -1,37 +1,86 @@
 import React from "react";
-import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import Image from 'next/image';
 
 const teamMembers = [
     {
         name: "John Doe",
         role: "Event Coordinator",
-        bio: "John is responsible for organizing and managing TEDx events, ensuring everything runs smoothly.",
-        image: "/images/john.png", // Replace with the image path
+        image: "/images/speaker2.png", // Replace with the image path
         social: {
             linkedin: "https://linkedin.com/in/johndoe",
-            twitter: "https://twitter.com/johndoe",
             instagram: "https://instagram.com/johndoe",
         },
     },
     {
         name: "Jane Smith",
         role: "Content Manager",
-        bio: "Jane creates and curates compelling content to ensure our talks resonate with the audience.",
-        image: "/images/jane.png", // Replace with the image path
+        image: "/images/speaker2.png", // Replace with the image path
         social: {
             linkedin: "https://linkedin.com/in/janesmith",
-            twitter: "https://twitter.com/janesmith",
             instagram: "https://instagram.com/janesmith",
         },
     },
     {
         name: "Alice Johnson",
         role: "Marketing Lead",
-        bio: "Alice develops innovative strategies to promote TEDx College, ensuring maximum impact.",
-        image: "/images/alice.png", // Replace with the image path
+        image: "/images/speaker2.png", // Replace with the image path
         social: {
             linkedin: "https://linkedin.com/in/alicejohnson",
-            twitter: "https://twitter.com/alicejohnson",
+            instagram: "https://instagram.com/alicejohnson",
+        },
+    },
+    {
+        name: "John Doe",
+        role: "Event Coordinator",
+        image: "/images/speaker2.png", // Replace with the image path
+        social: {
+            linkedin: "https://linkedin.com/in/johndoe",
+            instagram: "https://instagram.com/johndoe",
+        },
+    },
+    {
+        name: "Jane Smith",
+        role: "Content Manager",
+        image: "/images/speaker2.png", // Replace with the image path
+        social: {
+            linkedin: "https://linkedin.com/in/janesmith",
+            instagram: "https://instagram.com/janesmith",
+        },
+    },
+    {
+        name: "Alice Johnson",
+        role: "Marketing Lead",
+        image: "/images/speaker2.png", // Replace with the image path
+        social: {
+            linkedin: "https://linkedin.com/in/alicejohnson",
+            instagram: "https://instagram.com/alicejohnson",
+        },
+    },
+    {
+        name: "John Doe",
+        role: "Event Coordinator",
+        image: "/images/speaker2.png", // Replace with the image path
+        social: {
+            linkedin: "https://linkedin.com/in/johndoe",
+            instagram: "https://instagram.com/johndoe",
+        },
+    },
+    {
+        name: "Jane Smith",
+        role: "Content Manager",
+        image: "/images/speaker2.png", // Replace with the image path
+        social: {
+            linkedin: "https://linkedin.com/in/janesmith",
+            instagram: "https://instagram.com/janesmith",
+        },
+    },
+    {
+        name: "Alice Johnson",
+        role: "Marketing Lead",
+        image: "/images/speaker2.png", // Replace with the image path
+        social: {
+            linkedin: "https://linkedin.com/in/alicejohnson",
             instagram: "https://instagram.com/alicejohnson",
         },
     },
@@ -41,70 +90,86 @@ const Team = () => {
     return (
         <div className="bg-gray-900 text-white font-sans">
             {/* Hero Section */}
-            <header className="relative bg-gradient-to-r from-gray-800 to-gray-900 py-20 px-6 text-center">
-                <h1 className="text-5xl font-bold animate__animated animate__fadeInDown">
+            <header className="relative bg-gradient-to-r from-red-600 via-red-700 to-gray-900 py-24 px-6 text-center">
+                <h1 className="text-5xl pt-9 font-extrabold text-white animate__animated animate__fadeInDown">
                     Meet the TEDx College Team
                 </h1>
-                <p className="text-lg mt-4 text-gray-400 animate__animated animate__fadeInUp">
-                    A group of passionate individuals working together to bring inspiring ideas to life.
+                <p className="text-lg mt-4 text-gray-300 animate__animated animate__fadeInUp">
+                    Passionate individuals dedicated to bringing ideas to life and inspiring the community.
                 </p>
-                <button className="mt-8 px-8 py-3 bg-red-600 hover:bg-red-500 rounded-md text-lg font-medium transition transform hover:scale-105 animate__animated animate__fadeIn">
-                    Join Our Team
-                </button>
+                <p className="text-lg mt-4 text-gray-300 animate__animated animate__fadeInUp">
+                    Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon. Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
+                    Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon. Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
+                    Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon. Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
+                    Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon. Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
+                </p>
             </header>
 
-            {/* Team Members Section */}
-            <section className="py-16 px-6">
-                <h2 className="text-4xl font-semibold text-center mb-12">
+            <section className="py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
+                <h2 className="text-5xl font-extrabold text-center text-red-500 mb-12">
                     Our Amazing Team
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-screen-xl mx-auto">
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}
-                            className="bg-white text-black rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            className="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 group relative"
                         >
-                            <img
-                                src={member.image}
-                                alt={member.name}
-                                className="rounded-full w-32 h-32 mx-auto mb-4"
-                            />
-                            <h3 className="text-xl font-bold text-center">{member.name}</h3>
-                            <p className="text-sm text-center text-gray-600">{member.role}</p>
-                            <p className="text-center mt-4 text-gray-700">{member.bio}</p>
-                            <div className="flex justify-center mt-4 space-x-4">
-                                <a
-                                    href={member.social.linkedin}
-                                    className="text-blue-500 hover:text-blue-400"
-                                >
-                                    <FaLinkedin size={20} />
-                                </a>
-                                <a
-                                    href={member.social.twitter}
-                                    className="text-blue-400 hover:text-blue-300"
-                                >
-                                    <FaTwitter size={20} />
-                                </a>
-                                <a
-                                    href={member.social.instagram}
-                                    className="text-pink-500 hover:text-pink-400"
-                                >
-                                    <FaInstagram size={20} />
-                                </a>
+                            {/* Hover Overlay for more professional look */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-gray-900 opacity-0 group-hover:opacity-80 transition duration-500 rounded-lg" />
+
+                            {/* Image Section with Hover Effects */}
+                            <div className="relative z-10">
+                                <Image
+                                    src={member.image}
+                                    alt={member.name}
+                                    width={128}
+                                    height={128}
+                                    className="rounded-full w-32 h-32 mx-auto mt-6 group-hover:scale-110 transition-transform duration-500"
+                                />
+                            </div>
+
+                            {/* Card Content */}
+                            <div className="p-6 relative z-10">
+                                <h3 className="text-2xl font-bold text-center text-white">{member.name}</h3>
+                                <p className="text-sm text-center text-gray-400 mb-4">{member.role}</p>
+
+                                {/* Social Media Links */}
+                                <div className="flex justify-center space-x-6 mt-4">
+                                    <a
+                                        href={member.social.linkedin}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-blue-500 hover:text-blue-400 transition-transform transform hover:scale-125"
+                                    >
+                                        <FaLinkedin size={28} />
+                                    </a>
+                                    <a
+                                        href={member.social.instagram}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-pink-500 hover:text-pink-400 transition-transform transform hover:scale-125"
+                                    >
+                                        <FaInstagram size={28} />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </section>
 
-            {/* Highlight Section */}
-            <section className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 py-16 px-6 text-center">
-                <h2 className="text-4xl font-semibold mb-8 text-white">
-                    Join Us and Make a Difference
+            {/* Call-to-Action Section */}
+            <section className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 py-20 px-6 text-center">
+                <h2 className="text-4xl font-semibold text-white mb-8">
+                    Join Us and Be Part of the Movement
                 </h2>
-                <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-                    Become part of our team, contribute to impactful ideas, and help shape the future.
+                <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+                    Become part of a global initiative that fosters innovation, inspires action, and spreads ideas worth sharing.
                 </p>
+                <button className="px-6 py-3 bg-red-500 text-white rounded-full hover:bg-red-600 transition duration-300">
+                    Join the Team
+                </button>
             </section>
         </div>
     );

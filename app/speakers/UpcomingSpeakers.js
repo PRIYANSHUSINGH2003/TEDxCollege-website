@@ -182,7 +182,7 @@ const UpcomingSpeakers = () => {
 
             {/* Filters Section */}
             <section className="relative bg-gradient-to-r from-gray-800 to-gray-900 py-20 px-6 text-center">
-                <div className="flex justify-between items-center max-w-screen-xl mx-auto">
+                <div className="justify-between items-center max-w-screen-xl mx-auto">
                     <h2 className="text-3xl font-semibold">Recent Speakers</h2>
                 </div>
             </section>

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import dynamic from 'next/dynamic'; // Import dynamic from Next.js
-import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 import { AiOutlineInstagram, AiOutlineTwitter, AiOutlineLinkedin } from 'react-icons/ai';
 
 // Dynamically import ReactPlayer with ssr: false (only on client-side)

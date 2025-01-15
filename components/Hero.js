@@ -27,6 +27,9 @@ const Hero = () => {
                     <p className="text-lg md:text-xl mb-6 text-lightGrey animate__animated animate__fadeIn animate__delay-2s">
                         Unleashing the power of ideas worth spreading. Join us to explore bold ideas and innovative thoughts that will transform your perspective.
                     </p>
+                    <p className="text-lg md:text-xl mb-6 text-lightGrey animate__animated animate__fadeIn animate__delay-2s">
+                        Unleashing the power of ideas worth spreading. Join us to explore bold ideas and innovative thoughts that will transform your perspective.
+                    </p>
                     <div className="flex justify-center md:justify-start space-x-4 animate__animated animate__fadeIn animate__delay-3s">
                         <a
                             href="#tickets"

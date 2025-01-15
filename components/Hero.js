@@ -60,22 +60,6 @@ const Hero = () => {
                     <div className="absolute -z-10 bg-tedRed opacity-20 w-72 h-72 rounded-full top-1/4 right-1/4 blur-3xl"></div>
                 </div>
             </div>
-
-            {/* Add a Call-to-Action Below */}
-            <div className="bg-black py-12 text-center">
-                <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 animate__animated animate__fadeIn animate__delay-4s">
-                    Be Part of Something Bigger
-                </h2>
-                <p className="text-lg md:text-xl text-lightGrey mb-8 animate__animated animate__fadeIn animate__delay-5s">
-                    Explore the future of innovation, creativity, and inspiration. Join us for a day of transformative talks and experiences.
-                </p>
-                <a
-                    href="#tickets"
-                    className="bg-tedRed hover:bg-lightRed text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 animate__animated animate__fadeIn animate__delay-6s"
-                >
-                    Reserve Your Spot
-                </a>
-            </div>
         </section>
     );
 };

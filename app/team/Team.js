@@ -90,7 +90,7 @@ const Team = () => {
     return (
         <div className="bg-gray-900 text-white font-sans">
             {/* Hero Section */}
-            <header className="relative bg-gradient-to-r from-red-600 via-red-700 to-gray-900 py-24 px-6 text-center">
+            <header className="relative bg-gradient-to-r from-red-800 to-gray-900 py-24 px-6 text-center">
                 <h1 className="text-5xl pt-9 font-extrabold text-white animate__animated animate__fadeInDown">
                     Meet the TEDx College Team
                 </h1>

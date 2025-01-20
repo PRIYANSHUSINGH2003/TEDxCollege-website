@@ -26,16 +26,19 @@ const GetTickets = () => {
     <div className="bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white font-sans">
       {/* Hero Section */}
       <header className="relative bg-gradient-to-r from-red-800 to-gray-900 py-20 px-6 text-center">
-        <h1 className="text-5xl font-bold animate__animated animate__fadeInDown">
+        <h1 className="text-5xl pt-9 font-bold animate__animated animate__fadeInDown">
           Join Us at TEDxCollege
         </h1>
         <p className="text-lg mt-4 text-gray-300 animate__animated animate__fadeInUp">
           Discover inspiring talks, connect with brilliant minds, and experience
           ideas worth spreading.
         </p>
-        <button className="mt-8 px-8 py-3 bg-red-600 hover:bg-red-500 rounded-md text-lg font-medium transition transform hover:scale-105 animate__animated animate__fadeIn">
-          Get Tickets Now
-        </button>
+        <p className="text-lg mt-4 text-gray-300 animate__animated animate__fadeInUp">
+            Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon. Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
+            Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon. Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
+            Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon. Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
+            Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon. Be inspired by innovators, creators, and leaders shaping the future&#39;s horizon.
+        </p>
       </header>
 
       {/* Event Details Section */}

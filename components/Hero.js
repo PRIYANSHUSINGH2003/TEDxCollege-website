@@ -33,7 +33,7 @@ const Hero = () => {
                     </p>
                     <div className="flex justify-center md:justify-start space-x-4 animate__animated animate__fadeIn animate__delay-3s">
                         <Link href="/get_tickets" legacyBehavior >
-                            <a className="bg-tedRed hover:bg-lightRed text-white font-semibold py-4 px-6 mt-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+                            <a className="bg-tedRed hover:bg-lightRed text-white font-semibold py-4 px-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
                             >
                                 Get Tickets
                             </a>

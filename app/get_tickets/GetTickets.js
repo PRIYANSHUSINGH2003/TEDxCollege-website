@@ -3,6 +3,23 @@ import { FaTicketAlt, FaRegCalendarAlt } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 
 const GetTickets = () => {
+    const [formData, setFormData] = useState({
+        time: '',
+        date: '',
+        ticketType: '',
+        discount: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert('Ticket Purchased Successfully!');
+        console.log(formData);
+    };
   return (
     <div className="bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white font-sans">
       {/* Hero Section */}
@@ -76,71 +93,89 @@ const GetTickets = () => {
         </div>
       </section>
 
-      {/* Ticket Purchase Form */}
-      <section className="py-16 px-6 bg-gray-800">
-        <div className="max-w-screen-md mx-auto bg-gray-900 p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold text-center text-white mb-8">
-            Buy Your Ticket
-          </h2>
-          <form className="space-y-6">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-300"
-              >
-                Full Name
-              </label>
-              <input
-                id="name"
-                type="text"
-                placeholder="Enter your name"
-                className="mt-2 block w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-300"
-              >
-                Email Address
-              </label>
-              <input
-                id="email"
-                type="email"
-                placeholder="Enter your email"
-                className="mt-2 block w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="ticket-type"
-                className="block text-sm font-medium text-gray-300"
-              >
-                Ticket Type
-              </label>
-              <select
-                id="ticket-type"
-                className="mt-2 block w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-              >
-                <option>General Admission - $50</option>
-                <option>VIP Admission - $100</option>
-                <option>Student Admission - $30</option>
-              </select>
-            </div>
-            <button
-              type="submit"
-              className="w-full py-3 bg-red-600 hover:bg-red-500 text-white font-medium rounded-lg transition transform hover:scale-105"
-            >
-              Buy Ticket
-            </button>
-          </form>
-        </div>
-      </section>
+      {/* Ticket Form Section */}
+            <section className="py-16 px-6">
+                <div className="max-w-screen-md mx-auto bg-gray-800 rounded-lg shadow-lg p-8">
+                    <h2 className="text-3xl font-semibold text-center mb-8">
+                        Book Your Tickets
+                    </h2>
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        {/* Date */}
+                        <div>
+                            <label className="block text-gray-400 font-medium mb-2">
+                                Date <FaCalendarAlt className="inline ml-2 text-red-500" />
+                            </label>
+                            <input
+                                type="date"
+                                name="date"
+                                value={formData.date}
+                                onChange={handleChange}
+                                className="w-full bg-gray-700 text-white rounded-md py-2 px-4 outline-none focus:ring-2 focus:ring-red-500"
+                                required
+                            />
+                        </div>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 py-8 text-center">
-        <p className="text-gray-500">© 2025 TEDx College. All Rights Reserved.</p>
-      </footer>
+                        {/* Time */}
+                        <div>
+                            <label className="block text-gray-400 font-medium mb-2">
+                                Time <FaClock className="inline ml-2 text-red-500" />
+                            </label>
+                            <input
+                                type="time"
+                                name="time"
+                                value={formData.time}
+                                onChange={handleChange}
+                                className="w-full bg-gray-700 text-white rounded-md py-2 px-4 outline-none focus:ring-2 focus:ring-red-500"
+                                required
+                            />
+                        </div>
+
+                        {/* Ticket Type */}
+                        <div>
+                            <label className="block text-gray-400 font-medium mb-2">
+                                Ticket Type <FaTicketAlt className="inline ml-2 text-red-500" />
+                            </label>
+                            <select
+                                name="ticketType"
+                                value={formData.ticketType}
+                                onChange={handleChange}
+                                className="w-full bg-gray-700 text-white rounded-md py-2 px-4 outline-none focus:ring-2 focus:ring-red-500"
+                                required
+                            >
+                                <option value="" disabled>
+                                    Select a ticket type
+                                </option>
+                                <option value="Standard">Standard</option>
+                                <option value="VIP">VIP</option>
+                                <option value="Student">Student</option>
+                            </select>
+                        </div>
+
+                        {/* Discount */}
+                        <div>
+                            <label className="block text-gray-400 font-medium mb-2">
+                                Discount Code (Optional) <FaPercentage className="inline ml-2 text-red-500" />
+                            </label>
+                            <input
+                                type="text"
+                                name="discount"
+                                value={formData.discount}
+                                onChange={handleChange}
+                                className="w-full bg-gray-700 text-white rounded-md py-2 px-4 outline-none focus:ring-2 focus:ring-red-500"
+                                placeholder="Enter discount code"
+                            />
+                        </div>
+
+                        {/* Submit Button */}
+                        <button
+                            type="submit"
+                            className="w-full bg-red-600 hover:bg-red-500 text-white font-semibold py-3 rounded-md text-lg transition-transform transform hover:scale-105"
+                        >
+                            Purchase Tickets
+                        </button>
+                    </form>
+                </div>
+            </section>
     </div>
   );
 };

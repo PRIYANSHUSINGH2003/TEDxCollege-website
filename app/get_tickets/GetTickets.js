@@ -99,88 +99,89 @@ const GetTickets = () => {
       </section>
 
       {/* Ticket Form Section */}
-            <section className="py-16 px-6">
-                <div className="max-w-screen-md mx-auto bg-gray-800 rounded-lg shadow-lg p-8">
-                    <h2 className="text-3xl font-semibold text-center mb-8">
-                        Book Your Tickets
-                    </h2>
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                        {/* Date */}
-                        <div>
-                            <label className="block text-gray-400 font-medium mb-2">
-                                Date <FaCalendarAlt className="inline ml-2 text-red-500" />
-                            </label>
-                            <input
-                                type="date"
-                                name="date"
-                                value={formData.date}
-                                onChange={handleChange}
-                                className="w-full bg-gray-700 text-white rounded-md py-2 px-4 outline-none focus:ring-2 focus:ring-red-500"
-                                required
-                            />
-                        </div>
+{/* Ticket Form Section */}
+<section className="py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="max-w-screen-md mx-auto bg-gray-900 rounded-lg shadow-2xl p-10">
+        <h2 className="text-4xl font-bold text-center text-white mb-10">
+            Book Your Tickets
+        </h2>
+        <form onSubmit={handleSubmit} className="space-y-8">
+            {/* Date */}
+            <div>
+                <label className="block text-gray-300 font-medium mb-2">
+                    Date <FaCalendarAlt className="inline ml-2 text-red-400" />
+                </label>
+                <input
+                    type="date"
+                    name="date"
+                    value={formData.date}
+                    onChange={handleChange}
+                    className="w-full bg-gray-800 text-gray-300 rounded-lg py-3 px-4 outline-none focus:ring-2 focus:ring-red-500 transition-all"
+                    required
+                />
+            </div>
 
-                        {/* Time */}
-                        <div>
-                            <label className="block text-gray-400 font-medium mb-2">
-                                Time <FaClock className="inline ml-2 text-red-500" />
-                            </label>
-                            <input
-                                type="time"
-                                name="time"
-                                value={formData.time}
-                                onChange={handleChange}
-                                className="w-full bg-gray-700 text-white rounded-md py-2 px-4 outline-none focus:ring-2 focus:ring-red-500"
-                                required
-                            />
-                        </div>
+            {/* Time */}
+            <div>
+                <label className="block text-gray-300 font-medium mb-2">
+                    Time <FaClock className="inline ml-2 text-red-400" />
+                </label>
+                <input
+                    type="time"
+                    name="time"
+                    value={formData.time}
+                    onChange={handleChange}
+                    className="w-full bg-gray-800 text-gray-300 rounded-lg py-3 px-4 outline-none focus:ring-2 focus:ring-red-500 transition-all"
+                    required
+                />
+            </div>
 
-                        {/* Ticket Type */}
-                        <div>
-                            <label className="block text-gray-400 font-medium mb-2">
-                                Ticket Type <FaTicketAlt className="inline ml-2 text-red-500" />
-                            </label>
-                            <select
-                                name="ticketType"
-                                value={formData.ticketType}
-                                onChange={handleChange}
-                                className="w-full bg-gray-700 text-white rounded-md py-2 px-4 outline-none focus:ring-2 focus:ring-red-500"
-                                required
-                            >
-                                <option value="" disabled>
-                                    Select a ticket type
-                                </option>
-                                <option value="Standard">Standard</option>
-                                <option value="VIP">VIP</option>
-                                <option value="Student">Student</option>
-                            </select>
-                        </div>
+            {/* Ticket Type */}
+            <div>
+                <label className="block text-gray-300 font-medium mb-2">
+                    Ticket Type <FaTicketAlt className="inline ml-2 text-red-400" />
+                </label>
+                <select
+                    name="ticketType"
+                    value={formData.ticketType}
+                    onChange={handleChange}
+                    className="w-full bg-gray-800 text-gray-300 rounded-lg py-3 px-4 outline-none focus:ring-2 focus:ring-red-500 transition-all"
+                    required
+                >
+                    <option value="" disabled>
+                        Select a ticket type
+                    </option>
+                    <option value="Standard">Standard</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Student">Student</option>
+                </select>
+            </div>
 
-                        {/* Discount */}
-                        <div>
-                            <label className="block text-gray-400 font-medium mb-2">
-                                Discount Code (Optional) <FaPercentage className="inline ml-2 text-red-500" />
-                            </label>
-                            <input
-                                type="text"
-                                name="discount"
-                                value={formData.discount}
-                                onChange={handleChange}
-                                className="w-full bg-gray-700 text-white rounded-md py-2 px-4 outline-none focus:ring-2 focus:ring-red-500"
-                                placeholder="Enter discount code"
-                            />
-                        </div>
+            {/* Discount */}
+            <div>
+                <label className="block text-gray-300 font-medium mb-2">
+                    Discount Code (Optional) <FaPercentage className="inline ml-2 text-red-400" />
+                </label>
+                <input
+                    type="text"
+                    name="discount"
+                    value={formData.discount}
+                    onChange={handleChange}
+                    className="w-full bg-gray-800 text-gray-300 rounded-lg py-3 px-4 outline-none focus:ring-2 focus:ring-red-500 placeholder-gray-500 transition-all"
+                    placeholder="Enter discount code"
+                />
+            </div>
 
-                        {/* Submit Button */}
-                        <button
-                            type="submit"
-                            className="w-full bg-red-600 hover:bg-red-500 text-white font-semibold py-3 rounded-md text-lg transition-transform transform hover:scale-105"
-                        >
-                            Purchase Tickets
-                        </button>
-                    </form>
-                </div>
-            </section>
+            {/* Submit Button */}
+            <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-4 rounded-lg text-lg shadow-md transition-transform transform hover:scale-105"
+            >
+                Purchase Tickets
+            </button>
+        </form>
+    </div>
+</section>
     </div>
   );
 };

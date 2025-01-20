@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPlay } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link'; 
 
 const Hero = () => {
     return (
@@ -31,12 +32,13 @@ const Hero = () => {
                         Unleashing the power of ideas worth spreading. Join us to explore bold ideas and innovative thoughts that will transform your perspective.
                     </p>
                     <div className="flex justify-center md:justify-start space-x-4 animate__animated animate__fadeIn animate__delay-3s">
-                        <a
-                            href="#tickets"
-                            className="bg-tedRed hover:bg-lightRed text-white font-semibold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
-                        >
-                            Get Tickets
-                        </a>
+                        <Link href="/get_tickets" 
+                            <a
+                                className="bg-tedRed hover:bg-lightRed text-white font-semibold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+                            >
+                                Get Tickets
+                            </a>
+                        </Link>
                         <a
                             href="#video"
                             className="flex items-center bg-charcoalGrey hover:bg-silver text-white font-semibold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"

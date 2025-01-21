@@ -51,15 +51,25 @@ const Official = [
     },
 ];
 
-const Card = ({ photo, position, email, phone, name}) => {
+const Card = ({ photo, position, email, phone, name }) => {
     return (
-        <div className="bg-gray-900 shadow-md rounded-lg p-4 m-4">
-            <img src={photo} alt="Profile" className="w-full h-48 object-cover rounded-t-lg" />
-            <div className="mt-4">
-            <h2 className="text-xl font-semibold">{name}</h2>
-                <h2 className="text-xl font-semibold">{position}</h2>
-                <p className="text-gray-600">{email}</p>
-                <p className="text-gray-600">{phone}</p>
+        <div className="p-4 m-4">
+            <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+                <div className="relative w-full h-64 w-60">
+                    <img
+                        src={photo}
+                        alt={name}
+                        layout="fill"
+                        objectFit="cover"
+                        className="w-full h-full object-cover rounded-t-lg transition-transform duration-500 hover:scale-110"
+                    />
+                </div>
+                <div className="p-6">
+                    <h3 className="text-2xl font-bold text-white mb-2">{name}</h3>
+                    <p className="text-lg font-semibold text-gray-400 mb-2">{position}</p>
+                    <p className="text-sm text-gray-500 mb-4">{email}</p>
+                    <p className="text-sm text-gray-500 mb-4">{phone}</p>
+                </div>
             </div>
         </div>
     );
@@ -68,11 +78,14 @@ const Card = ({ photo, position, email, phone, name}) => {
 const ContactUs = () => {
     return (
         <>
-            <section className="pt-20 pb-8 px-6 bg-gray-800 text-center">
-                <div className="flex justify-between items-center max-w-screen-xl ">
-                    <h2 className="text-3xl font-semibold mt-4">Contact Us</h2>
-                </div>
-            </section>
+            <header className="relative bg-gradient-to-r from-red-600 via-red-700 to-gray-900 py-20 px-6 text-center">
+                <h1 className="text-5xl pt-9 font-extrabold text-white animate__animated animate__fadeInDown">
+                    Contact Us
+                </h1>
+                <p className="text-lg mt-4 text-gray-300 animate__animated animate__fadeInUp">
+                    Various ways for you to reach out with questions or feedback.
+                </p>
+            </header>
 
             <div className="flex flex-col items-center bg-black mt-4">
                 <h1 className="text-3xl px-4 text-[#E62B1E] font-bold">Organizing Team</h1>

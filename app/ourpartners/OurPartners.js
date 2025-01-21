@@ -43,11 +43,14 @@ const SponsorCards = () => {
 const OurPartners = () => {
     return (
         <>
-            <section className="pt-20 pb-8 px-6 bg-gray-800">
-                <div className="flex justify-between items-center max-w-screen-xl mx-auto">
-                    <h2 className="text-3xl font-semibold mt-4">Our Sponsers</h2>
-                </div>
-            </section>
+            <header className="relative bg-gradient-to-r from-red-600 via-red-700 to-gray-900 py-20 px-6 text-center">
+                <h1 className="text-5xl pt-9 font-extrabold text-white animate__animated animate__fadeInDown">
+                    Our Sponsors
+                </h1>
+                <p className="text-lg mt-4 text-gray-300 animate__animated animate__fadeInUp">
+                    Our key collaborators enhancing our services
+                </p>
+            </header>
 
             <SponsorCards />
             

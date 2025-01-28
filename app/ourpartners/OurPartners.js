@@ -43,7 +43,7 @@ const SponsorCards = () => {
 const OurPartners = () => {
     return (
         <>
-            <header className="relative bg-gradient-to-r from-red-600 via-red-700 to-gray-900 py-20 px-6 text-center">
+            <header className="relative bg-gradient-to-r from-red-800 to-gray-900 py-24 px-6 text-center">
                 <h1 className="text-5xl pt-9 font-extrabold text-white animate__animated animate__fadeInDown">
                     Our Sponsors
                 </h1>
@@ -54,13 +54,13 @@ const OurPartners = () => {
 
             <SponsorCards />
             
-            <div className="p-6 bg-[#72012b] rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-4">Event Statistics</h2>
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <div className="p-6 bg-[#ed2939] rounded-lg shadow-md flex flex-col items-center">
+            <h2 className="text-2xl text-center font-bold mb-4 text-white">Event Statistics</h2>
+                <div className="grid justify-center items-center item-center grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center items-center">
                     {statsData.map((stat, index) => (
                         <div
                             key={index}
-                            className="bg-gray-800 text-center p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+                            className="flex flex-col items-center bg-gray-800 text-center p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
                         >
                             <h3 className="text-xl font-semibold">{stat.title}</h3>
                             <p className="text-2xl font-bold text-blue-600">{stat.value}</p>

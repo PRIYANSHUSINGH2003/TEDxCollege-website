@@ -53,7 +53,7 @@ const Official = [
 
 const Card = ({ photo, position, email, phone, name }) => {
     return (
-        <div className="p-4 m-4">
+        <div className="p-2 m-2">
             <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
                 <div className="relative w-full h-64 w-60">
                     <img
@@ -78,7 +78,7 @@ const Card = ({ photo, position, email, phone, name }) => {
 const ContactUs = () => {
     return (
         <>
-            <header className="relative bg-gradient-to-r from-red-600 via-red-700 to-gray-900 py-20 px-6 text-center">
+            <header className="relative bg-gradient-to-r from-red-800 to-gray-900 py-24 px-6 text-center">
                 <h1 className="text-5xl pt-9 font-extrabold text-white animate__animated animate__fadeInDown">
                     Contact Us
                 </h1>
@@ -88,8 +88,8 @@ const ContactUs = () => {
             </header>
 
             <div className="flex flex-col items-center bg-black mt-4">
-                <h1 className="text-3xl px-4 text-[#E62B1E] font-bold">Organizing Team</h1>
-                <div className="grid grid-cols-2  gap-4">
+                <h1 className="text-2xl md:text-4xl lg:grid-cols-3 px-4 text-white font-bold">Organizing Team</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 px-4">
                     {orgTeam.map((team, index) => (
                         <Card
                             key={index}
@@ -102,8 +102,9 @@ const ContactUs = () => {
                     ))}
                 </div>
                 <hr className="border-t border-white w-1/2 my-4" />
-                <h1 className="text-3xl px-4 text-[#E62B1E] font-bold">College Authorities</h1>
-                <div className="grid grid-cols-2  gap-4">
+
+                <h1 className="text-2xl md:text-4xl px-4 text-white font-bold">College Authorities</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 px-4">
                     {Authorities.map((team, index) => (
                         <Card
                             key={index}
@@ -116,8 +117,9 @@ const ContactUs = () => {
                     ))}
                 </div>
                 <hr className="border-t border-white w-1/2 my-4" />
-                <h1 className="text-3xl px-4 text-[#E62B1E] font-bold">Official TEDx</h1>
-                <div className="grid grid-cols-2  gap-4">
+
+                <h1 className="text-3xl md:text-4xl px-4 text-white font-bold">Official TEDx</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 px-4">
                     {Official.map((team, index) => (
                         <Card
                             key={index}
@@ -130,6 +132,7 @@ const ContactUs = () => {
                     ))}
                 </div>
             </div>
+
         </>
     );
 };

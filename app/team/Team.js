@@ -106,7 +106,7 @@ const Team = () => {
             </header>
 
             <section className="py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
-                <h2 className="text-5xl font-extrabold text-center text-red-500 mb-12">
+                <h2 className="text-5xl font-extrabold text-center text-white mb-12">
                     Our Amazing Team
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-screen-xl mx-auto">

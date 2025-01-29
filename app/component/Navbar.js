@@ -24,11 +24,6 @@ const Navbar = () => {
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/" className="flex items-center">
-                    <img
-                        src="/tedx-logo.png" // Replace with your logo path
-                        alt="TEDx Logo"
-                        className="h-12 transform hover:scale-105 transition duration-300"
-                    />
                     <span className="ml-2 text-2xl font-bold text-tedRed">
                         TEDxCollege
                     </span>

@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState } from 'react';
@@ -200,8 +199,8 @@ const WatchPage = () => {
 
   return (
     <div className="bg-gradient-to-r from-red-800 to-gray-900 text-white  font-sans">
-      <header className="text-center py-20 pt-8">
-        <h1 className="text-4xl font-bold animate__fadeIn">Watch Our TEDx Talks</h1>
+      <header className="text-center py-20 pt-20 " style={{paddingTop:'8em'}}>
+        <h1 className="text-2xl font-bold animate__fadeIn">Watch Our TEDx Talks</h1>
         <p className="text-lg mt-4">Explore amazing speakers and their impactful talks.</p>
         
         {/* Navigation Buttons */}

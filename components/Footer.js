@@ -3,7 +3,7 @@ import { AiFillInstagram, AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from 
 import { FaFacebookF } from 'react-icons/fa';
 
 const Footer = () => {
-    return (
+    return ( 
         <footer className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-10 px-6 md:px-12 transition-all duration-300">
             <div className="max-w-screen-xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-semibold text-tedRed mb-6 animate__animated animate__fadeIn">
